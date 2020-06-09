@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig'
+    'blog.apps.BlogConfig',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#
+# EMAIL_HOST = 'imap.mydomain.com'
+# EMAIL_HOST_USER = 'info@e5software.com.mx'
+# EMAIL_HOST_PASSWORD = '0CFhtJI1qYz7uubr2C70'
+# EMAIL_PORT = 993
+# EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
